@@ -77,11 +77,10 @@ perkTres.addEventListener("click", () => {
 
 function cheeseProtocol(){
     body.classList.add("cheese-bg")
-    clickBtn.classList.remove("click-btn-class")
-    clickBtn.classList.remove("click-btn-down")
 
     clickBtn.classList.add("click-btn-class-cheese")
-    clickBtn.classList.add("click-btn-down-cheese")
+    clickBtn.classList.remove("click-btn-class")
+    clickBtn.classList.remove("click-btn-down")
 
     shopText.innerHTML = "🧀SHOP🧀"
     shopDiv.classList.add("cheese-shop")
