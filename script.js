@@ -23,6 +23,8 @@ let multiplayer = 1
 let crit = 0
 let cheese = 0
 
+let critAssist = 0
+
 clickBtn.addEventListener("click", () => {
     counterCheck()
     addClick()
@@ -86,11 +88,13 @@ function cheeseProtocol(){
 }
 
 function addClick(){
+
     counterValue = multiplayer + counterValue++
     counter.innerText = counterValue
 
     if(crit == 1){
-        if(counterValue % 4 == 0){
+        critAssist++
+        if(critAssist % 4 == 0){
             counterValue = counterValue + 4
             counter.classList.add("red")
             setTimeout(() => {
