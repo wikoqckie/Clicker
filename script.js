@@ -96,6 +96,7 @@ function addClick(){
         critAssist++
         if(critAssist % 4 == 0){
             counterValue = counterValue + 4
+            counter.innerText = counterValue
             counter.classList.add("red")
             setTimeout(() => {
                 counter.classList.remove("red")
