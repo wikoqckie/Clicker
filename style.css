@@ -3,15 +3,25 @@
     src: url(LondrinaSolid-Black.ttf);
 }
 
-body{
+.cheese-bg{
+    background-image: url(assets/background-cheese.png);
+}
+
+#body{
     background-color: rgb(38, 38, 38);
     font-family: main;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #shop{
     background-color: rgba(255, 255, 255, 0.054);
     width: 700px;
     border-radius: 30px;
+}
+
+.cheese-shop{
+    background-image: url(assets/background-cheese-dark.png);
 }
 
 .text{
@@ -33,6 +43,7 @@ body{
 
 .cost{
     color: rgb(149, 0, 0);
+    margin-left: 10px;
 }
 
 .items{
@@ -50,6 +61,10 @@ body{
 #counter{
     color: white;
     font-size: 60px;
+}
+
+#counter.red{
+    color: red;
 }
 
 #main-content{
@@ -77,4 +92,27 @@ body{
 
 .click-btn-down:hover{
     background-image: url(assets/button-down-off.png);
+}
+
+.click-btn-class-cheese{
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(assets/button-up-cheese.png);
+    margin-top: 5%;
+    border: 0;
+    width: 323px;
+    height: 181px;
+    background-color: transparent;
+}
+
+.click-btn-class-cheese:hover{
+    background-image: url(assets/button-up-off-cheese.png);
+}
+
+.click-btn-down-cheese{
+    background-image: url(assets/button-down-cheese.png);
+}
+
+.click-btn-down-cheese:hover{
+    background-image: url(assets/button-down-off-cheese.png);
 }
