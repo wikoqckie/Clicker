@@ -26,8 +26,8 @@ let cheese = 0
 let critAssist = 0
 
 clickBtn.addEventListener("click", () => {
-    counterCheck()
     addClick()
+    counterCheck()
     if(cheese == 0){
         clickBtn.classList.add("click-btn-down")
         setTimeout(() => {
@@ -105,19 +105,19 @@ function addClick(){
 }
 
 function counterCheck(){
-    if(counterValue >= 99){
-        perkDos.classList.add("b")
-    }else{
-        perkDos.classList.remove("b")
-    }
-
-    if(counterValue >= 9){
+    if(counterValue >= 10){
         perkUno.classList.add("b")
     }else{
         perkUno.classList.remove("b")
     }
 
-    if(counterValue >= 999){
+    if(counterValue >= 100){
+        perkDos.classList.add("b")
+    }else{
+        perkDos.classList.remove("b")
+    }
+
+    if(counterValue >= 1000){
         perkTres.classList.add("b")
     }else{
         perkTres.classList.remove("b")
