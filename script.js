@@ -105,16 +105,16 @@ function addClick(){
 }
 
 function counterCheck(){
-    if(counterValue >= 9){
-        perkUno.classList.add("b")
-    }else{
-        perkUno.classList.remove("b")
-    }
-
     if(counterValue >= 99){
         perkDos.classList.add("b")
     }else{
         perkDos.classList.remove("b")
+    }
+
+    if(counterValue >= 9){
+        perkUno.classList.add("b")
+    }else{
+        perkUno.classList.remove("b")
     }
 
     if(counterValue >= 999){
