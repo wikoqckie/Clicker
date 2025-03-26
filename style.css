@@ -1,3 +1,80 @@
+@font-face {
+    font-family: main;
+    src: url(LondrinaSolid-Black.ttf);
+}
+
+body{
+    background-color: rgb(38, 38, 38);
+    font-family: main;
+}
+
+#shop{
+    background-color: rgba(255, 255, 255, 0.054);
+    width: 700px;
+    border-radius: 30px;
+}
+
+.text{
+    color: white;
+    font-size: 40px;
+}
+
+.a{
+    background-color: rgb(150, 150, 150);
+}
+
+.b{
+    background-color: rgb(55, 255, 0);
+}
+
+.c{
+    background-color: rgb(0, 147, 2);
+}
+
+.cost{
+    color: rgb(149, 0, 0);
+}
+
+.items{
+    margin: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.284);
+    border-radius: 30px;
+    border: 0;
+    padding: 20px;
+    width: 95%;
+    font-family: main;
+    font-size: 50px;
+}
+
+#counter{
+    color: white;
+    font-size: 60px;
+}
+
 #main-content{
-    
+    height: 100%;
+}
+
+.click-btn-class{
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(assets/button-up.png);
+    margin-top: 5%;
+    border: 0;
+    width: 323px;
+    height: 181px;
+    background-color: transparent;
+}
+
+.click-btn-class:hover{
+    background-image: url(assets/button-up-off.png);
+}
+
+.click-btn-down{
+    background-image: url(assets/button-down.png);
+}
+
+.click-btn-down:hover{
+    background-image: url(assets/button-down-off.png);
 }
